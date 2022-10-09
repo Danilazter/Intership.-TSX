@@ -1,0 +1,29 @@
+.navContainer{
+    width: 100%;
+    height: 100vh;
+background-color: #111518;
+position: absolute;
+top: 0;
+z-index: -1;
+}
+
+.link a{
+text-decoration: none;
+font-size: 22px;
+font-style: medium;
+text-transform: uppercase;
+color:#ffffff;
+
+}
+
+.link a:hover{
+    color: #0EC261;
+}
+
+ .hidden {
+     display: none;
+ }
+
+ .visible {
+     display: inherit;
+ }

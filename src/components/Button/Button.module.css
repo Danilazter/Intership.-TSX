@@ -1,0 +1,17 @@
+.buttonBlock{
+    display: flex;
+    justify-content: center;
+}
+
+
+.button{
+    width: 320px;
+    height:50px;
+    color:#FFF;
+    background-image: linear-gradient(to right, #0EC261 0%, #039F67 100%); 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: medium;
+   cursor: pointer;
+   border: none;
+}

@@ -1,0 +1,20 @@
+ {
+  "links": [
+        {
+        "label": "Парковка",
+        "href": "/parking"
+    },
+    {
+      "label": "Страховка",
+        "href": "/insurance"
+    },
+    {
+     "label": "Бензин",
+        "href": "/petrol"
+    }, 
+    {
+     "label": "Обслуживание",
+        "href": "/service"
+    }
+]
+}
