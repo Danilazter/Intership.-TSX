@@ -1,40 +1,27 @@
-import React, { FC } from 'react';
-import styles from './Menu.module.css';
-import style from '../Navbar/Navbar.module.css';
-import * as data from './Links.json';
-const linksString = JSON.stringify(data);
-const links = JSON.parse(linksString).links;
+import React, { useRef, useState } from 'react';
 
+import Burger from './Burger';
+import { StyledMenu, StyledLink } from './MenuStyled';
 
-type Link = {
-    label : string;
-    href: string;
-}
+import { useOnClickOutside } from '../Hooks/Hooks';
 
+const Menu = () => {
+    const [open, setOpen] = useState<boolean>(false);
+    const node = useRef<HTMLDivElement>(null);
+    const close = () => setOpen(false);
 
+    useOnClickOutside(node, () => setOpen(false));
 
-
-const Links: React.FC<{ links: Link[] }> = ({ links }) => {
     return (
-        <div>
-            {links.map((link: Link) => {
-                return (
-                    <div key={link.href} className={styles['link']}>
-                        <a href={link.href}>
-                            {link.label}
-                        </a>
-                    </div>
-                )
-            })}
+        <div ref={node}>
+            <StyledMenu open={open}>
+                <StyledLink onClick={() => close()}>Парковка</StyledLink>
+                <StyledLink onClick={() => close()}>Парковка</StyledLink>
+                <StyledLink onClick={() => close()}>Парковка</StyledLink>
+                <StyledLink onClick={() => close()}>Парковка</StyledLink>
+            </StyledMenu>
+            <Burger open={open} setOpen={setOpen} />
         </div>
-    )
-};
-
-const Menu: FC<{}> = () => {
-    return (
-        <nav className={styles.navContainer}>
-            <Links links={links}/>
-        </nav>
     );
 };
 
