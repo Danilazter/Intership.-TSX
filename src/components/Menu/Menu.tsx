@@ -16,9 +16,9 @@ const Menu = () => {
         <div ref={node}>
             <StyledMenu open={open}>
                 <StyledLink onClick={() => close()}>Парковка</StyledLink>
-                <StyledLink onClick={() => close()}>Парковка</StyledLink>
-                <StyledLink onClick={() => close()}>Парковка</StyledLink>
-                <StyledLink onClick={() => close()}>Парковка</StyledLink>
+                <StyledLink onClick={() => close()}>Страховка</StyledLink>
+                <StyledLink onClick={() => close()}>Бензин</StyledLink>
+                <StyledLink onClick={() => close()}>Обслуживание</StyledLink>
             </StyledMenu>
             <Burger open={open} setOpen={setOpen} />
         </div>

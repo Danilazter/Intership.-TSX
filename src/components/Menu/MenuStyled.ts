@@ -2,36 +2,34 @@ import styled from "styled-components";
 import { colors } from '../../Global';
 
 export const StyledMenu = styled.nav<{ open: boolean }>`
-top:0;
-left:0;
+top: 0;
+left: 0;
 height:100vh;
-width: 35vw;
+width: 100vw;
 position: fixed;
-background-color: ${colors.lightbrown};
+background-color: ${colors.Black};
 z-index: 1;
-padding : 10rem 0;
+padding : 6rem 0;
 flex-direction: column;
 display: ${({ open }) => (open ? "flex" : "none")}
 
 transition: transform 0.3s ease-in-out;
 transform: ${({ open }) =>
     (open ? "translateX(0)" : "translateX(-100%)")};
-        
-    @media (max-width: 600px) {
-        width: 100%;
-    }
 `;
 
 
 
 export const StyledLink = styled.a`
-padding: 0 2rem;
+padding: 0.5rem 2rem;
 font-size: 2rem;
-color: ${colors.pearl};
+color: ${colors.White};
 text-decoration: none;
+display: flex;
+display-direction: column;
 
 :hover{
-    color: ${colors.yellowmellow};
+    color: ${colors.mainaccent};
     cursor: pointer;
 }
  `;
