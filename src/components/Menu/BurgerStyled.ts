@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-import { colors } from "../../Global";
+import { colors } from "../../styles/Global";
 
 export const StyledBurger = styled.button<{ open: boolean }>`
 position: fixed;
 left: 9vw;
 top: 9vw;
 width: 100%;
-height:2rem;
+height: 2rem;
 padding:0;
 background: transparent;
 
@@ -27,18 +27,18 @@ z-index: 1;
 
 div{
     position: relative;
-    width: 2rem;
+    width: 1.5rem;
     height: 0.25rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: ${({ open }) =>
         open ? colors.White : colors.Black};
         
     transition: all 0.3s linear;
-    transform-origin: 1px;
+    transform-origin: -3px;
 
     :first-child {
         transform: ${({ open }) =>
-            (open ? "rotate(45deg)" : "rotate(0)" )};
+    (open  ? "rotate(45deg)" : "rotate(0)")  };
     }
     :nth-child(2) {
     opacity: ${({ open }) => (open ? "0" : "1") };
@@ -47,7 +47,7 @@ div{
     }
     :nth-child(3) {
         transform: ${({ open }) =>
-            (open ? "rotate(-45deg)" : "rotate(0)")}
+            (open  ? "rotate(-45deg)" : "rotate(0)")}
     }
    
 }`;

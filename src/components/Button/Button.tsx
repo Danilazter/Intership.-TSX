@@ -1,13 +1,25 @@
-import React from 'react';
-import styles from './Button.module.css';
+import React from 'react'
+import { Container } from './ButtonStyled' 
 
 
-const Button = () => {
-  return (
-    <div className={styles.buttonBlock}>
-      <button className={styles.button}>Забронировать</button>
-      </div>
-  )
+export type ButtonProps = {
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    children?: React.ReactNode;
+    color?: 'primary';
+    disabled?: boolean;
 }
+
+const Button = ({
+    onClick,
+    children,
+    color = "primary",
+    disabled,
+}: ButtonProps) => {
+    return (
+        <Container onClick={onClick} color={color} disabled={disabled}>
+          {children}
+        </Container>
+    );
+};
 
 export default Button;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from '../../Global';
+import { colors } from '../../styles/Global';
 
 export const StyledMenu = styled.nav<{ open: boolean }>`
 top: 0;
@@ -13,7 +13,7 @@ padding : 6rem 0;
 flex-direction: column;
 display: ${({ open }) => (open ? "flex" : "none")}
 
-transition: transform 0.3s ease-in-out;
+transition = transform 0.3s ease-in-out;
 transform: ${({ open }) =>
     (open ? "translateX(0)" : "translateX(-100%)")};
 `;
@@ -26,7 +26,6 @@ font-size: 2rem;
 color: ${colors.White};
 text-decoration: none;
 display: flex;
-display-direction: column;
 
 :hover{
     color: ${colors.mainaccent};
