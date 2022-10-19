@@ -16,6 +16,12 @@ display: ${({ open }) => (open ? "flex" : "none")}
 transition = transform 0.3s ease-in-out;
 transform: ${({ open }) =>
     (open ? "translateX(0)" : "translateX(-100%)")};
+
+    @media (min-width:768px){
+        display: flex;
+        justify-content: center;
+
+}
 `;
 
 
@@ -26,6 +32,11 @@ font-size: 2rem;
 color: ${colors.White};
 text-decoration: none;
 display: flex;
+
+@media (min-width:768px){
+    position: relative;
+margin-left: 5rem;
+}
 
 :hover{
     color: ${colors.mainaccent};

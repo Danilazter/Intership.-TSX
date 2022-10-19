@@ -25,9 +25,9 @@ const Menu = () => {
                 <StyledLink onClick={() => close()}>Бензин</StyledLink>
                 <StyledLink onClick={() => close()}>Обслуживание</StyledLink>
                 <div>
+            <StyledTelegramIcon color={colors.White} />
             <StyledFacebookIcon color={colors.White} />
             <StyledIntagramIcon color={colors.White} />
-            <StyledTelegramIcon color={colors.White} />
               </div>
             </StyledMenu>
             <Burger open={open} setOpen={setOpen} />

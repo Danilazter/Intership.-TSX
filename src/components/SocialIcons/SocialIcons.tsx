@@ -27,6 +27,15 @@ const svgSocialStyles = ({ height, color, hoverColor, ...props }: svgProps) => {
         margin-top: 2rem;
     margin-left: 2rem;
     cursor: pointer;
+
+    @media (min-width:768px){
+        position: relative;
+        display: inline-block;
+        flex-direction: row;
+        left: 5.5rem;
+        margin-left: 1.5rem;
+
+    }
     `;
 };
 

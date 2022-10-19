@@ -25,6 +25,16 @@ font-weight: medium;
 font-size:18px;
 outline:none;
 
+@media (min-width:768px) {
+    position: relative;
+    border-radius: 0.5rem;
+    width:250px;
+    height: 48px;
+    top: 1.5rem;
+    left: 6rem;
+}
+
 ${(props) => props.color && ButtonColor[props.color]}
 ${(props) => props.disabled && DISABLED}
+
 `

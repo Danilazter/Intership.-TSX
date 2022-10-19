@@ -19,16 +19,28 @@ cursor: pointer;
 outline: none;
 z-index: 1;
 
-//  @media (max-width: 600px){
-//         left: ${({ open }) => (open ? "initial" : "3vw")};
-//         right: ${({open}) => (open ? "2vw" : "initial")}
-//     }
+@media (min-width:768px) {
+    left: 0;
+    top: 0;
+width: 4.5rem;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+background: ${colors.Black};
 
+
+background: ${({open }) => (open ? "transparent" : "")};
+}
+
+/* @media (max-width: 600px) {
+         left: ${({ open }) => (open ? "initial" : "3vw")};
+         right: ${({open}) => (open ? "2vw" : "initial")}
+} */
 
 div{
     position: relative;
     width: 1.5rem;
-    height: 0.25rem;
+    height: 0.2rem;
     border-radius: 1rem;
     background-color: ${({ open }) =>
         open ? colors.White : colors.Black};
@@ -50,5 +62,14 @@ div{
             (open  ? "rotate(-45deg)" : "rotate(0)")}
     }
    
+@media (min-width:768px) {
+top:3vh; 
+margin-top: 0.3rem;
+width: 2rem;
+height: 0.2rem;
+transform-origin: 4.5px;
+background-color: ${colors.White};
+}
+
 }`;
 

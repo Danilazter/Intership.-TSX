@@ -68,4 +68,36 @@ padding: 0 2rem;
   font-weight: lignt;
   color: ${colors.Gray};
 }
+
+
+@media (min-width:768px){
+  .header__text{
+    position: absolute;
+    margin-left: 5rem;
+    top: -6px;
+  }
+
+  .myPlace{
+    padding-right: 1rem;
+  }
+
+  .heroBlock{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+
+margin-left: 4rem;
+margin-top: 228px;
+  }
+
+  .heroHeading{
+    font-size: 70px;
+  }
+
+  .heroText{
+    font-size: 26px;
+    margin-left: 2px;
+  }
+}
 `
