@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './components/Button/Button';
 import Footer from './components/Footer/Footer';
 import Menu from './components/Menu/Menu';
+import Slider from './components/Slider/Slider';
 import { StyledPlaceIcon } from './components/SocialIcons/SocialIcons';
 import { GlobalStyle } from './styles/Global'
 
@@ -36,7 +37,11 @@ function App() {
             </p>
             </div>
           <Button>Забронировать</Button>
-          </main>
+          <aside className='asideBlock'>
+            <Slider></Slider>
+          </aside>
+        </main>
+
         <Footer />
         
         {/*

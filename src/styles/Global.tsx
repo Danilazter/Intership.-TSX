@@ -20,6 +20,8 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+/* Header Block   */
+
 .header__left{
   display: flex;
   flex-direction:column;
@@ -48,6 +50,9 @@ export const GlobalStyle = createGlobalStyle`
   color: ${colors.Gray};
 }
 
+/* Hero Block   */
+
+
 .heroBlock{
 padding: 0 2rem;
 }
@@ -68,6 +73,9 @@ padding: 0 2rem;
   font-weight: lignt;
   color: ${colors.Gray};
 }
+
+
+/* MEDIA Hero Block   */
 
 
 @media (min-width:768px){
@@ -99,5 +107,12 @@ margin-top: 228px;
     font-size: 26px;
     margin-left: 2px;
   }
+
+/* Aside Block   */
+
+.asideBlock{
+  display: flex;
+}
+
 }
 `
