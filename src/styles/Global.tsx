@@ -107,12 +107,15 @@ margin-top: 228px;
     font-size: 26px;
     margin-left: 2px;
   }
+}
 
+@media (min-width:1024px){
+  
 /* Aside Block   */
 
 .asideBlock{
   display: flex;
+  height: 100vh;
 }
-
 }
 `

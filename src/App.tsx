@@ -2,9 +2,13 @@ import React from 'react';
 import Button from './components/Button/Button';
 import Footer from './components/Footer/Footer';
 import Menu from './components/Menu/Menu';
-import Slider from './components/Slider/Slider';
+import { Slider2 } from './components/Slider/Slider';
 import { StyledPlaceIcon } from './components/SocialIcons/SocialIcons';
 import { GlobalStyle } from './styles/Global'
+import image from './components/Assets/Images/ImagesSlider/pic-1.png'
+import image2 from './components/Assets/Images/ImagesSlider/pic-2.png'
+import image3 from './components/Assets/Images/ImagesSlider/pic-3.png'
+import image4 from './components/Assets/Images/ImagesSlider/pic-4.png'
 
 
 
@@ -30,7 +34,7 @@ function App() {
           <div className='heroBlock'>
           <h1 className="heroHeading">Каршеринг
             <br />
-          <span className='secondHeading'>  Need for drive </span>
+          <span className='secondHeading'>Need for drive</span>
             </h1>
             <p className='heroText'> 
               Поминутная аренда авто твоего города
@@ -38,7 +42,13 @@ function App() {
             </div>
           <Button>Забронировать</Button>
           <aside className='asideBlock'>
-            <Slider></Slider>
+            <Slider2 reviews={[
+              { id: 1, heading:"Бесплатная парковка", text:"Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.", image},
+              { id: 2, heading:"Страховка", text:"Полная страховка страховка автомобиля", image2},
+              { id: 3, heading:"Бензин", text:"Полный бак на любой заправке города за наш счёт", image3},
+              { id: 4, heading:"Обслуживание", text:"Автомобиль проходит еженедельное ТО", image4},
+            ]} />
+            {/* <Slider></Slider> */}
           </aside>
         </main>
 

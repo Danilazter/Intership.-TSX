@@ -20,10 +20,10 @@ const Menu = () => {
     return (
         <div ref={node}>
             <StyledMenu open={open}>
-                <StyledLink onClick={() => close()}>Парковка</StyledLink>
-                <StyledLink onClick={() => close()}>Страховка</StyledLink>
-                <StyledLink onClick={() => close()}>Бензин</StyledLink>
-                <StyledLink onClick={() => close()}>Обслуживание</StyledLink>
+                <StyledLink onClick={() => close()}>ПАРКОВКА</StyledLink>
+                <StyledLink onClick={() => close()}>СТРАХОВКА</StyledLink>
+                <StyledLink onClick={() => close()}>БЕНЗИН</StyledLink>
+                <StyledLink onClick={() => close()}>ОБСЛУЖИВАНИЕ</StyledLink>
                 <div>
             <StyledTelegramIcon color={colors.White} />
             <StyledFacebookIcon color={colors.White} />
