@@ -31,7 +31,6 @@ const Menu = () => {
               </div>
             </StyledMenu>
             <Burger open={open} setOpen={setOpen} />
-            
         </div>
     );
 };

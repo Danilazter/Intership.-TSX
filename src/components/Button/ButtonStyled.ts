@@ -34,6 +34,10 @@ outline:none;
     left: 6rem;
 }
 
+@media (min-width:1024px){
+    left:-1.6rem;
+}
+
 ${(props) => props.color && ButtonColor[props.color]}
 ${(props) => props.disabled && DISABLED}
 

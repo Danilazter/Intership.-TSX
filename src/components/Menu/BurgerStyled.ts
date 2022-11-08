@@ -6,7 +6,6 @@ export const StyledBurger = styled.button<{ open: boolean }>`
 position: fixed;
 left: 9vw;
 top: 9vw;
-width: 100%;
 height: 2rem;
 padding:0;
 background: transparent;

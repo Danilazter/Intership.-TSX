@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+
 /* Header Block   */
 
 .header__left{
@@ -82,11 +83,12 @@ padding: 0 2rem;
   .header__text{
     position: absolute;
     margin-left: 5rem;
-    top: -6px;
   }
 
   .myPlace{
-    padding-right: 1rem;
+    position: relative;
+    right: 1rem;
+    
   }
 
   .heroBlock{
@@ -109,13 +111,32 @@ margin-top: 228px;
   }
 }
 
-@media (min-width:1024px){
-  
+@media (min-width: 1024px){
+  .mainPage{
+  display: flex;
+  flex-direction: row;
+}
+
 /* Aside Block   */
 
 .asideBlock{
+  position: absolute;
   display: flex;
-  height: 100vh;
+  height: 100%;
+  width: 40%;
+  right: 0px;
 }
+
+  .myPlace{
+    left: 30rem;
+    top: 0.2rem;
+  }
+
+  .heroBlock{
+    position: relative;
+   right: 7.8rem;
+  }
 }
+
+ 
 `
