@@ -16,8 +16,8 @@ const Main = () => {
             </p>
             </div>
                 <Button>Забронировать</Button>
-        <Footer />
         </main>
+        <Footer />
         </div>
   )
 }
