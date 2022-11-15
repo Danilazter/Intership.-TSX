@@ -45,6 +45,7 @@ padding-bottom: 15px;
     .copyright{
         color: #999999;
         margin-left: 6rem;
+        padding-top: 0;
     }
 
     .phone{
@@ -58,12 +59,17 @@ padding-bottom: 15px;
     position: relative;
     right: 33rem;
  }
+
+ .copyright{
+    position: relative;
+    right: 7.7rem;
+ }
 }
 
 @media (min-width:1440px){
 
     .copyright{
-        margin-left: 2rem;
+        right: 6rem;
     }
 
     .phone{
