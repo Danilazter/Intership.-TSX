@@ -27,7 +27,6 @@ export const GlobalStyle = createGlobalStyle`
   display: flex;
   flex-direction:column;
   text-align: end;
-
   margin: 1.9rem 1rem;
 }
 
@@ -94,11 +93,10 @@ padding: 0 2rem;
   .heroBlock{
     display: flex;
     flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-
-margin-left: 4rem;
-margin-top: 228px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 4rem;
+    margin-top: 228px;
   }
 
   .heroHeading{
@@ -137,6 +135,19 @@ margin-top: 228px;
    right: 7.8rem;
   }
 }
+ @media (min-width:1440px){
+  
+  .header__text{
+    left : 3rem;
+  }
+  
+  .myPlace{
+    left: 43rem;
+  }
 
- 
+  .heroBlock{
+    right: 6rem;
+  }
+
+ }
 `

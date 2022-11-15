@@ -22,6 +22,10 @@ transform: ${({ open }) =>
         justify-content: center;
 
 }
+
+    @media (min-width: 1024px){
+        opacity: 0.9;
+    }
 `;
 
 

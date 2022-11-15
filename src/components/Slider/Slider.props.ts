@@ -2,12 +2,12 @@ export interface IReview {
     id: number;
     heading: string;
     text: string;
-    image?: string;
+    image0?: string;
+    image1?: string;
     image2?: string;
     image3?: string;
-    image4?: string;
 }
 
-export interface SliderProps {
+export interface ISliderProps {
     reviews: IReview[];
 }

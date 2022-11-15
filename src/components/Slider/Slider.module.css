@@ -87,11 +87,12 @@ cursor: pointer;
 .previous {
     position: absolute;
     transform: rotate(180deg);
-    right: 92%;
+    left: 0;
 }
 
 .next{
-    position: relative;
+    position: absolute;
+    right: 0;
 }
 
 .previous:hover,

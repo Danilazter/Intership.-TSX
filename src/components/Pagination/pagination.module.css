@@ -1,0 +1,33 @@
+.paginationWrapper {
+    padding: 0 0 2rem 0;
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    bottom: 0;
+}
+
+.pageItem{
+    background: white;
+    border:none;
+    height: .5rem;
+    width: .5rem;
+    margin: 0 0.25rem;
+    border-radius:50%;
+    cursor: pointer;
+    color: transparent;
+}
+
+
+.pageItem:focus {
+    outline: 0;
+}
+
+.active{
+    background-color: #0EC261;
+}
+
+
+
+
+
+

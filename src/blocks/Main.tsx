@@ -15,9 +15,10 @@ const Main = () => {
               Поминутная аренда авто твоего города
             </p>
             </div>
-                <Button>Забронировать</Button>
-        </main>
+          <Button>Забронировать</Button>
         <Footer />
+          
+        </main>
         </div>
   )
 }
