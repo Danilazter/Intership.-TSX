@@ -28,7 +28,7 @@ const Menu = () => {
             <StyledTelegramIcon color={colors.White} />
             <StyledFacebookIcon color={colors.White} />
             <StyledIntagramIcon color={colors.White} />
-              </div>
+                </div>
             </StyledMenu>
             <Burger open={open} setOpen={setOpen} />
         </div>

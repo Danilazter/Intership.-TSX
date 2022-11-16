@@ -69,5 +69,18 @@ transform-origin: 4.5px;
 background-color: ${colors.White};
 }
 
-}`;
+}
+
+    p{
+        position: absolute;
+        bottom: 2.5rem;
+        z-index: 1;
+        color: ${colors.mainaccent};
+        font-size: 13px;
+        font-weight: bold;
+
+        display: ${({open }) => (open ? "none" : "")};
+    }
+
+`;
 

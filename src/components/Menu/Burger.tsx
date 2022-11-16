@@ -16,7 +16,8 @@ const Burger = (props: Props) => (
         <div />
         <div />
         <div />
-</StyledBurger>
+        <p>Eng</p>
+    </StyledBurger>
 )
 
 export default Burger;
