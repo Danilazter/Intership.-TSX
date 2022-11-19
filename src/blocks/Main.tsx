@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button/Button'
 import Footer from '../components/Footer/Footer'
 
+
 const Main = () => {
     return (
         <div>

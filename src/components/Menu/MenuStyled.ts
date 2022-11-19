@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from '../../styles/Global';
 
+
 export const StyledMenu = styled.nav<{ open: boolean }>`
 top: 0;
 left: 0;
@@ -24,11 +25,16 @@ transform: ${({ open }) =>
 }
 
     @media (min-width: 1024px){
-        opacity: 0.9;
-    }
+        
+        width:${({ open }) => (open ? "60%"  : "none") };
+        opacity: ${({ open }) => (open ? "1"  : "none") };
+        } 
+        @media (min-width: 1440px){
+        
+        width:${({ open }) => (open ? "50%"  : "none") };
+        opacity: ${({ open }) => (open ? "1"  : "none") };
+        }
 `;
-
-
 
 export const StyledLink = styled.a`
 padding: 0.5rem 2rem;
@@ -47,3 +53,20 @@ margin-left: 5rem;
     cursor: pointer;
 }
  `;
+
+export const StyledRight = styled.div<{ open: boolean }>`
+ display: flex;
+ position: fixed;
+justify-content: center;
+width: 100%;
+height: 100vh;
+left: 100%;
+background-color: ${colors.Black};
+display: ${({ open }) => (open ? "flex" : "none")};
+
+@media (min-width: 1024px){
+        width:${({ open }) => (open ? "100%"  : "none") };
+        opacity: ${({ open }) => (open ? ".81" : "none") };
+        }
+`;
+

@@ -17,14 +17,14 @@ export type svgProps = {
 
 const svgSocialStyles = ({ height, color, hoverColor, ...props }: svgProps) => {
     return css`
-        height: ${height || "32px"};
+        height: ${height || "34px"};
         & path {
             fill: ${color || colors.White};
         }
             &:hover path {
                 fill: ${hoverColor || colors.mainaccent};
         }
-        margin-top: 2rem;
+    margin-top: 2rem;
     margin-left: 2rem;
     cursor: pointer;
 
@@ -46,7 +46,7 @@ export type PlaceProps = {
 
 const svgPlaceStyles = ({ height, color, ...props }: PlaceProps ) => {
     return css`
-         height: ${height || "21px"};
+         height: ${height || "22px"};
         & path {
             fill: ${color || colors.White};
         }

@@ -55,9 +55,15 @@ padding-bottom: 15px;
 }
 
 @media (min-width: 1024px){
+
+.text{
+    width:50%;
+}
+
  .phone{
     position: relative;
-    right: 33rem;
+    right:1rem;
+    width: 20%;
  }
 
  .copyright{
@@ -73,6 +79,6 @@ padding-bottom: 15px;
     }
 
     .phone{
-        right:  45rem;
+        width: 35%;
     }
 }   

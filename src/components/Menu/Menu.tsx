@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 import Burger from './Burger';
-import { StyledMenu, StyledLink } from './MenuStyled';
+import { StyledMenu, StyledLink, StyledRight} from './MenuStyled';
 
 import { StyledFacebookIcon } from '../SocialIcons/SocialIcons';
 import { StyledTelegramIcon } from '../SocialIcons/SocialIcons';
@@ -29,6 +29,9 @@ const Menu = () => {
             <StyledFacebookIcon color={colors.White} />
             <StyledIntagramIcon color={colors.White} />
                 </div>
+                <StyledRight open={open}
+                onClick={() => close()}
+                />
             </StyledMenu>
             <Burger open={open} setOpen={setOpen} />
         </div>

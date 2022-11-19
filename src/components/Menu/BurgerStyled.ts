@@ -25,9 +25,24 @@ width: 4.5rem;
     justify-content: flex-start;
     align-items: center;
 background: ${colors.Black};
+}
 
+p{
+    display: none;
+}
 
-background: ${({open }) => (open ? "transparent" : "")};
+@media (min-width:768px){
+    p{
+        display: block;
+        position: absolute;
+        bottom: 2.5rem;
+        z-index: 1;
+        color: ${colors.mainaccent};
+        font-size: 13px;
+        font-weight: bold;
+
+        display: ${({open }) => (open ? "none" : "")};
+    }
 }
 
 /* @media (max-width: 600px) {
@@ -68,19 +83,6 @@ height: 0.2rem;
 transform-origin: 4.5px;
 background-color: ${colors.White};
 }
-
 }
-
-    p{
-        position: absolute;
-        bottom: 2.5rem;
-        z-index: 1;
-        color: ${colors.mainaccent};
-        font-size: 13px;
-        font-weight: bold;
-
-        display: ${({open }) => (open ? "none" : "")};
-    }
-
 `;
 

@@ -128,6 +128,15 @@ padding: 0 2rem;
   .myPlace{
     left: 30rem;
     top: 0.2rem;
+    @media (min-width:1150px){
+      left: 34rem;
+    }
+    @media (min-width: 1280px){
+      left: 38rem;
+    }
+    @media (min-width:1370px){
+      left:41rem;
+    }
   }
 
   .heroBlock{
@@ -136,13 +145,17 @@ padding: 0 2rem;
   }
 }
  @media (min-width:1440px){
+
+  .asideBlock{
+    width: 50%;
+  }
   
   .header__text{
     left : 3rem;
   }
   
   .myPlace{
-    left: 43rem;
+    left: 35rem;
   }
 
   .heroBlock{
@@ -151,3 +164,4 @@ padding: 0 2rem;
 
  }
 `
+

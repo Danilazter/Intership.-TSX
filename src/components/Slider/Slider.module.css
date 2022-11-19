@@ -1,6 +1,6 @@
-
 .slider{
     display: none;
+
 }
 
 @media (min-width: 1024px){
@@ -24,42 +24,35 @@ background-position: center;
 }
 
 .textBlock{
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 
 .heading{
-    width: 80%;
     font-size: 32px;
     font-weight: medium; 
     color: #fff;
-    justify-content: flex-start;
 }
 
 .text{
     margin-top: 1rem;
     /* margin-right: 2rem; */
-    width: 80%;
     font-size: 22px;
     font-weight: light;
     color:#fff;
 }
 
-.button{
-    width: 80%;
-}
+
 
 .slideButton{
 position: relative;
 width: 164px;
 height: 48px;
-top: 1rem;
+top: 2rem;
 background-image: linear-gradient(to right, #13493F 0%, #0C7B1B 50%);
-margin-top: 10px;
-padding: 10px 5px;
 text-align: center;
 transition: 0.5s;
 background-size: 200% auto;
@@ -70,16 +63,35 @@ font-size: 18px;
 font-weight: medium;
 }
 
-.slideButtonBlue{
+.slideButton1{
     background-image: linear-gradient(to right, #132949 0%, #0C7B67 50%);
 }
 
-.slideButtonPink{
+.slideButton2{
     background-image: linear-gradient(to right, #493013 0%, #7B0C3B 50%);
 }
 
-.slideButtonPurple{
+.slideButton3{
     background-image: linear-gradient(to right, #281349 0%, #720C7B 50%);
+}
+
+.paginList{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 17rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.paginItem{
+    margin-left: 20px;
+    color:white;
+    list-style-position: outside;
+}
+
+.paginItemActive{
+color:#0C7B1B;
 }
 
 .sliderButtons{
@@ -95,7 +107,7 @@ border:none;
 cursor: pointer;
 }
 
-.Arrow{
+.arrow{
     width: 30%;
     height: 99%;
 }
