@@ -38,7 +38,7 @@ transform: ${({ open }) =>
 
 export const StyledLink = styled.a`
 padding: 0.5rem 2rem;
-font-size: 2rem;
+font-size: 22px;
 color: ${colors.White};
 text-decoration: none;
 display: flex;
@@ -46,6 +46,11 @@ display: flex;
 @media (min-width:768px){
     position: relative;
 margin-left: 5rem;
+font-size: 28px;
+}
+
+@media (min-width:1024px){
+    font-size: 32px;
 }
 
 :hover{

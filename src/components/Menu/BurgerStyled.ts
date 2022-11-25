@@ -28,12 +28,21 @@ background: ${colors.Black};
 }
 
 p{
-    display: none;
+        position: absolute;
+        bottom: 2.5rem;
+        z-index: 1;
+        color: ${colors.mainaccent};
+        font-size: 13px;
+        font-weight: bold;
+
+        @media(max-width:767px){
+            display: ${({ open }) => (open ? "" : "none")};
+            top:30rem;
+        }
 }
 
 @media (min-width:768px){
     p{
-        display: block;
         position: absolute;
         bottom: 2.5rem;
         z-index: 1;
