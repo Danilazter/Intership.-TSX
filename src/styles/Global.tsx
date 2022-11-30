@@ -122,7 +122,7 @@ padding: 0 2rem;
   display: flex;
   height: 100%;
   width: 40%;
-  right: 0px;
+  right: 0;
 }
 
   .myPlace{

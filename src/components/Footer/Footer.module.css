@@ -56,9 +56,9 @@ padding-bottom: 15px;
 
 @media (min-width: 1024px){
 
-.text{
-    width:50%;
-}
+    .Footer{
+        width:50%;
+    }
 
  .phone{
     position: relative;
