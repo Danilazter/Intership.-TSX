@@ -39,8 +39,7 @@ export const Slider = ({ reviews }: ISliderProps) => {
         >
             <div className={`${styles.slide} ${styles[fadeState]}`}
                 // style={{ backgroundImage: `url(${reviews[slide].image0}), url(${reviews[slide].image1}), url(${reviews[slide].image2}), url(${reviews[slide].image3})`, transitionDuration: `${FADE_DURATION}ms` }}
-                style={{ backgroundImage: `url(${reviews[slide].image})`, transitionDuration: `${FADE_DURATION}ms` }}
-                
+                style={{ backgroundImage: `url(${reviews[slide].image})`, transitionDuration: `${FADE_DURATION}ms`}}
             >
                 <div className={styles.textBlock}>
                     <div className={styles.heading}>{reviews[slide].heading}</div>
@@ -51,6 +50,7 @@ export const Slider = ({ reviews }: ISliderProps) => {
                             className={`${styles.slideButton} ${styles[`slideButton${slide}`]}`}
                             >Подробнее</button>
         </div>
+        
                     <div>
                         <ul className={styles.paginList}>{
                             reviews.map((item) => {
